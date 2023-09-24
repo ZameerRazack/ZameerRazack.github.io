@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zameer Razack - Landing Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a;
+            color: #ccc;
+        }
+
+        a {
+            color: #4e89ae;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: #ddd;
+        }
+
+        .hero-image {
+            background-image: url('hero_zameer.png');
+            background-size: cover;
+            background-position: center;
+            height: 60vh; /* Adjusted for smaller screens */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fcf5e5;
+            text-align: center;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60vh;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-title {
+            font-size: 2em; /* Adjusted for smaller screens */
+            margin-bottom: 10px; /* Adjusted for smaller screens */
+            font-weight: bold;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5em; /* Adjusted for smaller screens */
+            margin-bottom: 20px; /* Adjusted for smaller screens */
+            font-style: italic;
+        }
+
+        .hero-quote {
+            font-size: 1em; /* Adjusted for smaller screens */
+            font-style: italic;
+            margin-bottom: 40px; /* Adjusted for smaller screens */
+            line-height: 1.5em;
+            max-width: 70%; /* Adjusted for smaller screens */
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+            justify-content: center;
+        }
+
+        .hero-button {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 15px; /* Adjusted for smaller screens */
+            margin: 5px;
+            font-size: 0.8em; /* Adjusted for smaller screens */
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            background-color: #478B38;
+            color: #fff;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 0 10px rgba(107, 191, 89, 0.5);
+        }
+
+        .hero-button:hover {
+            background-color: #3C732D;
+        }
+
+        .section {
+            padding: 10px; /* Adjusted for smaller screens */
+            background-color: #000; /* Set the background color to black */
+            color: #ccc; /* Set text color to white for better contrast */
+        }
+
+        .section-title {
+            font-size: 1.2em; /* Adjusted for smaller screens */
+            font-weight: bold;
+            margin-bottom: 10px; /* Adjusted for smaller screens */
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .section {
+            padding: 20px;
+            background-color: #1a1a1a; /* Set the background color for the section */
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center content horizontally */
+            text-align: center; /* Center text */
+        }
+
+        .text, .image {
+            width: 100%;
+            margin-bottom: 20px; /* Add some spacing between text and image */
+        }
+
+        .image img {
+            max-width: 100%; /* Make sure images don't exceed their container's width */
+            display: block; /* Center the image within the image container */
+            margin: 0 auto; /* Center the image within the image container */
+        }
+
+        @media (min-width: 768px) {
+            .content {
+                flex-direction: row; /* Change to horizontal layout for larger screens */
+                justify-content: center; /* Center content horizontally */
+                text-align: left; /* Align text to the left on larger screens */
+            }
+            
+            .text, .image {
+                width: 45%; /* Each takes half the width on larger screens */
+                margin-bottom: 0; /* Remove margin between text and image on larger screens */
+                margin-right: 5%; /* Add some spacing between text and image on larger screens */
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="hero-image">
+        <div class="hero-overlay">
+            <div class="hero-title">
+                Zameer Razack, M.Phil
+            </div>
+            <div class="hero-subtitle">
+                Healthspan Optimization Athlete
+            </div>
+            <div class="hero-quote">
+                Tech can enhance our health and well-being in unimaginable ways.<br>
+                Read on to see my results, or learn how you can do the same...
+            </div>
+            <div class="hero-buttons">
+                <a href="#aboutme" class="hero-button">About Me</a>
+                <a href="#achievements" class="hero-button">Achievements</a>
+                <a href="#daily-routes" class="hero-button">Daily Routes</a>
+                <a href="#sponsorship" class="hero-button">Sponsorship</a>
+                <a href="#supporting-institutions" class="hero-button">Supporting Institutions</a>
+                <a href="#philosophy-diet" class="hero-button">Longevity</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="aboutme" class="section">
+        <div class="content">
+            <div class="text">
+                <div class="section-title">About me</div>
+                <p>Information about Zameer Razack's background.</p>
+            </div>
+            <div class="image">
+                <img src="image1.jpg" alt="Image 1">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="aboutme" class="section">
+        <div class="section-title">Background</div>
+        <p>Information about Zameer Razack's background.</p>
+    </div>
+
+    <div id="achievements" class="section">
+        <div class="section-title">Achievements</div>
+        <p>Information about Zameer Razack's background.</p>
+    </div>
+
+    <div id="daily-routes" class="section">
+        <div class="section-title">Daily Routes</div>
+        <ul>
+            <li>Dablicky Haj</li>
+            <li>Kobylisy - Prague Castle - Florenc</li>
+            <li>Kobylisy - Holesovice</li>
+        </ul>
+    </div>
+
+    <div id="supporting-institutions" class="section">
+        <div class="section-title">Supporting Institutions</div>
+        <ul>
+            <li>Atoda Medical</li>
+            <li>Run Lab</li>
+        </ul>
+    </div>
+
+    <div id="philosophy-diet" class="section">
+        <div class="section-title">Philosophy and Diet</div>
+        <p>Information about Zameer Razack's philosophy and diet.</p>
+    </div>
+</body>
+
+</html>
