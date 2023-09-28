@@ -80,11 +80,15 @@
         }
 
         .hero-button {
-            flex: 1;
+            /* flex: 1; */
+            width: 50px; /* Set a specific width for the buttons */
+            height: 20px;
+            padding: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 10px 15px; /* Adjusted for smaller screens */
+            /* padding: 10px 15px; Adjusted for smaller screens */
+            /* padding: 25px; */
             margin: 5px;
             font-size: 0.8em; /* Adjusted for smaller screens */
             font-weight: bold;
@@ -95,6 +99,9 @@
             cursor: pointer;
             text-decoration: none;
             box-shadow: 0 0 10px rgba(107, 191, 89, 0.5);
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis; /* Truncate text with ellipses */
         }
 
         .hero-button:hover {
@@ -105,7 +112,6 @@
             padding: 10px; /* Adjusted for smaller screens */
             background-color: #000; /* Set the background color to black */
             color: #ccc; /* Set text color to white for better contrast */
-            line-height: 1.6;
         }
 
         .section-title {
@@ -156,6 +162,42 @@
             }
         }
 
+        .achievements-table {
+            width: 100%;
+            overflow-x: auto;
+            }
+
+            table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            }
+
+            th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+            }
+
+            th {
+            background-color: #478B38;
+            color: #fff;
+            }
+
+            tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+            }
+
+            a {
+            color: #478B38;
+            text-decoration: none;
+            }
+
+            a:hover {
+            text-decoration: underline;
+            }
+
+
     </style>
 </head>
 
@@ -177,7 +219,7 @@
                 <a href="#achievements" class="hero-button">Achievements</a>
                 <a href="#daily-routes" class="hero-button">Daily Routes</a>
                 <a href="#sponsorship" class="hero-button">Sponsorship</a>
-                <a href="#supporting-institutions" class="hero-button">Supporting Institutions</a>
+                <a href="#supporting-institutions" class="hero-button">Supporting</BR>Institutions</a>
                 <a href="#philosophy-diet" class="hero-button">Longevity</a>
             </div>
         </div>
@@ -197,17 +239,27 @@
         </div>
     </div>
 
-
     <div id="achievements" class="section">
-        <div class="content">
-            <div class="text">
-                <div class="section-title">Achievements</div>
-                <p><b>19 - 23 September 2023</b></br>Teribear Running Competition</b></p>
-                <p><b>Result:</b> 97.2 kilometers <b></br><A href="https://leaderboard.teribear.cz/">Top 5% of best performers</A></b></p>
-            </div>
-            <div class="image">
-            </div>
-        </div>
+        <div class="section-title">Achievements</div>
+        <div class="achievements-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Competition</th>
+                  <th>Result</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2023-09-23</td>
+                  <td>Teribear Running Competition</td>
+                  <td>97.2 km, Top 5%</br></br><a href="https://leaderboard.teribear.cz/?query=Zameer+Razack&category=&teamId=">Certificate</a></td>
+                </tr>
+                <!-- Add more rows as needed -->
+              </tbody>
+            </table>
+          </div>          
     </div>
 
     <div id="daily-routes" class="section">
